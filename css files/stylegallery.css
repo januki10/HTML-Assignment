@@ -363,7 +363,7 @@ footer .container{
         display: block;
         justify-content: space-evenly;
         text-align: center;
-        margin-top:-30px;
+        
     }
 
     .gallerypics img {
@@ -425,10 +425,13 @@ footer .container{
     }
     .column .inform h3 {
         padding-top: 30px;
+        text-align: center;
     }
     .gallery {
         margin:0;
     }
+
+    
 
     .gallerypics img {
         width: 330px;

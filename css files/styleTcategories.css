@@ -596,6 +596,7 @@ footer .container{
 
     .column .inform h3 {
         padding-top: 20px;
+        text-align: center;
     }
     
     header {
@@ -639,7 +640,7 @@ footer .container{
     }
 
     table {
-        margin-left:6px !important;
+        margin-left:5.2px !important;
         font-size: 13px !important;  
     }
 
