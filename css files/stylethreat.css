@@ -9,7 +9,7 @@ body{
 }
 header{
     margin-top:-25px;
-    background-image: url(/images/threat.jpg);
+    background-image: url(../images/threat.jpg);
     background-position: center;
     background-size: cover;
     height:600px;

@@ -10,7 +10,7 @@ body{
 
 header{
     margin-top:-25px;
-    background: url(/images/TurtleCat1.jpg) rgba(255 , 255, 255, 0.1);
+    background: url(../images/TurtleCat1.jpg) rgba(255 , 255, 255, 0.1);
     background-size: cover;
     background-position:center;
     height:600px;
@@ -320,7 +320,7 @@ input[type="checkbox"] {
 /*section-iii*/
 .section-iii{
     margin-top:60px;
-    background:url(/images/water2.jpg);
+    background:url(../images/water2.jpg);
     background-size:cover;
     background-position:center;
     
