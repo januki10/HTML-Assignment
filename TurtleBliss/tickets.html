@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TBbooking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <div class="head">
+            <a href="home.html">Home</a>
+        </div>
+
+        <div class="head">
+            <p>Buy Tickets</p>
+        </div>
+
+        <div class="head">
+            <div class="head1">
+                <p>Show your tickets via mobile<br>device or print at home.</p>
+            </div>
+
+            <div class="head2">
+                <i class="fa-solid fa-mobile-screen" style="color: #ffffff;"></i>
+            </div>
+            
+        </div>
+
+    </header>
+
+    <div class="details">
+        <div class="caption">
+            <p>Your Visit Makes A Difference!</p>
+            <p>Embark on an unforgettable journey of compassion and conservation. Book your tickets today and become a guardian of the sea turtles, ensuring a brighter future for these magnificent creatures. Join us in preserving their legacy for generations to come.</p>
+        </div>
+    
+        <div class="video-ticket">
+            <video autoplay muted loop plays-inline>
+                <source src="images/TicketsBackground.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+   
+    <div class="pricestopic">
+
+        <p>PRICE LIST <BR>( FOR 1-HOUR BASED TIME SLOTS )</p>
+            
+    </div>
+
+    <div class="tables">
+
+
+        <div class="srilankan">
+
+            <p class="slguest">Sri Lankan</p>
+
+            <table class="sl">
+
+                <tr>
+                    <td>Category</td>
+                    <td>Normal</td>
+                    <td>Peak</td>
+                </tr>
+
+                <tr>
+                    <td>Adult<br><small style="color:rgb(175, 191, 191)">(Above 15 Years)</small></td></td>
+                    <td>$4</td>
+                    <td>$6</td>
+                </tr>
+
+                <tr>
+                    <td>Child<br><small style="color:rgb(175, 191, 191)">(5 to 14 Years)</small></td>
+                    <td>$2</td>
+                    <td>$3</td>
+                </tr>
+
+                <tr>
+                    <td>Infant<br><small style="color:rgb(175, 191, 191)">(Under 4 Years)</small></td>
+                    <td>FREE</td>
+                    <td>FREE</td>
+                </tr>
+              
+            </table>
+        </div>
+   
+    
+    
+        <div class="foreign">
+            
+            <p class="frguest">Foreigners</p>
+
+            <table class="fr">
+
+            <tr>
+                <td>Category</td>
+                <td>Normal</td>
+                <td>Peak</td>
+            </tr>
+
+            <tr>
+                <td>Adult<br><small style="color:rgb(175, 191, 191)">(Above 15 Years)</small></td>
+                <td>$10</td>
+                <td>$13</td>
+            </tr>
+
+            <tr>
+                <td>Child<br><small style="color:rgb(175, 191, 191)">(5 to 14 Years)</small></td>
+                <td>$5</td>
+                <td>$8</td>
+            </tr>
+
+            <tr>
+                <td>Infant<br><small style="color:rgb(175, 191, 191)">(Under 4 Years)</small></td>
+                <td>FREE</td>
+                <td>FREE</td>
+            </tr>
+          
+        </table>
+
+        </div>
+    
+    </div>
+
+            
+    
+
+    <div class="notice">
+        <p> * PEAK HOURS => 10.00AM to 1.00PM  & 3.00PM to 6.00PM * </p>
+        
+    </div>
+
+    
+
+    <div class="follow">
+        <p>TO COMPLETE THE BOOKING PROCESS, KINDLY ADHERE TO THE FOLLOWING STEPS.</p>
+    </div>
+
+    <div class="dates">
+    </div>
+ 
+
+    <!--Calendar-->
+
+    <div class="wrapper">
+
+    <div class="trunk">
+
+    <label class="label1">Calendar</label><br><br> 
+
+
+    <p class="step1">Step 1: Select a date you'd prefer for the visit</p>
+
+    
+        <div class="box1">
+
+            <div class="wrap">
+                <p class="currentdate"></p>
+                <div class="calendaricons">
+                    <i id="previous" class="fa-solid fa-chevron-left" style="color: #ffffff;"></i>
+                    <i id="next" class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+                </div>
+            </div>
+    
+            <div class="calendar">
+                <ul class="weeks">
+                    <li>Sun</li>
+                    <li>Mon</li>
+                    <li>Tue</li>
+                    <li>Wed</li>
+                    <li>Thu</li>
+                    <li>Fri</li>
+                    <li>Sat</li>
+                </ul>
+    
+                <ul class="days"></ul>
+            </div>
+        </div>  
+
+    <!--Duration-->
+
+    <label class="label2">Duration</label>
+
+
+    <p class="step2">Step 2: Select a time slot/slots </p>
+    <p class="step2det">Keep in mind that you can only select adjacent time slots if you are<br> choosing mutiple time slots.You cannot choose to skip a slot. </p>
+
+    <div class="duration">
+
+        <input type="checkbox" id="select1" onclick="checking(),totalhourscounting(),peakcounting(),slotbook()">
+        <label for="select1" id="slot1"><li id="button1" >&nbsp;&nbsp;7:00 AM - &nbsp;&nbsp;8:00 AM</li></label><br><br>
+
+        <input type="checkbox" id="select2" onclick="checking(),totalhourscounting(),peakcounting(),slotbook()">
+        <label for="select2" id="slot2"><li id="button2">&nbsp;&nbsp;8:00 AM - &nbsp;&nbsp;9:00 AM</li></label><br><br>
+
+        <input type="checkbox" id="select3" onclick="checking(),totalhourscounting(),peakcounting(),slotbook()">
+        <label for="select3" id="slot3"><li id="button3">&nbsp;&nbsp;9:00 AM -&nbsp;10:00 AM</li></label><br><br>
+
+        <input type="checkbox" id="select4" onclick="checking(),totalhourscounting(),peakcounting(),slotbook()">
+        <label for="select4" id="slot4"><li id="button4">10:00 AM&nbsp;-&nbsp;11:00 AM</li></label><br><br>
+
+        <input type="checkbox" id="select5" onclick="checking(),totalhourscounting(),peakcounting(),slotbook()">
+        <label for="select5" id="slot5"><li id="button5">11:00 AM&nbsp;-&nbsp;12:00 PM</li></label><br><br>
+
+        <input type="checkbox" id="select6" onclick="checking(),totalhourscounting(),peakcounting(),slotbook()">
+        <label for="select6" id="slot6"><li id="button6">12:00 PM - &nbsp;&nbsp;1:00 PM</li></label><br><br>
+
+        <input type="checkbox" id="select7" onclick="checking(),totalhourscounting(),peakcounting(),slotbook()">
+        <label for="select7" id="slot7"><li id="button7">&nbsp;&nbsp;1:00 PM - &nbsp;&nbsp;2:00 PM</li></label><br><br>
+
+        <input type="checkbox" id="select8" onclick="checking(),totalhourscounting(),peakcounting(),slotbook()">
+        <label for="select8" id="slot8"><li id="button8">&nbsp;&nbsp;2:00 PM - &nbsp;&nbsp;3:00 PM</li></label><br><br>
+
+        <input type="checkbox" id="select9" onclick="checking(),totalhourscounting(),peakcounting(),slotbook()">
+        <label for="select9" id="slot9"><li id="button9">&nbsp;&nbsp;3:00 PM - &nbsp;&nbsp;4:00 PM</li></label><br><br>
+
+        <input type="checkbox" id="select10" onclick="checking(),totalhourscounting(),peakcounting(),slotbook()">
+        <label for="select10" id="slot10"><li id="button10">&nbsp;&nbsp;4:00 PM - &nbsp;&nbsp;5:00 PM</li></label><br><br>
+
+        <input type="checkbox" id="select11" onclick="checking(),totalhourscounting(),peakcounting(),slotbook()">
+        <label for="select11" id="slot11"><li id="button11">&nbsp;&nbsp;5:00 PM - &nbsp;&nbsp;6:00 PM</li></label><br><br>
+    </div>
+
+
+    <!--Guests-->
+
+    <label class="label3">Guests</label><br>
+
+    <p class="step3">Step 3: Select the number of guests. </p>
+
+    <div class="guests">
+
+        <div class="people">
+            <p>Sri Lankan Adult</p>
+            <p>Sri Lankan Child</p>
+            <p>Foreign Adult</p>
+            <p>Foreign Child</p>
+            <p>Infant</p>
+        </div>
+
+
+        <br>
+
+
+        <div class="incrementdecrement">
+
+            <div class="incdec1">
+                <div>
+                    <button class="minus" id="sub1" onclick="substraction1()">-</button> 
+                </div>
+                
+                <span class="incdecnumber" id="display1">0</span>
+
+                <div>
+                    <button class="plus" id="add1" onclick="addition1()">+</button>
+                </div>
+            </div>
+
+            
+
+            <div class="incdec2">
+                <div>
+                    <button class="minus" id="sub2" onclick="substraction2()">-</button> 
+                </div>
+                
+                <span class="incdecnumber" id="display2">0</span>
+
+                <div>
+                    <button class="plus" id="add2" onclick="addition2()">+</button>
+                </div>
+            </div>
+
+           
+
+            <div class="incdec3">
+                <div>
+                    <button class="minus" id="sub3" onclick="substraction3()">-</button> 
+                </div>
+                
+                <span class="incdecnumber" id="display3">0</span>
+
+                <div>
+                    <button class="plus" id="add3" onclick="addition3()">+</button>
+                </div>
+            </div>
+
+
+
+            <div class="incdec4">
+                <div>
+                    <button class="minus" id="sub4" onclick="substraction4()">-</button> 
+                </div>
+                
+                <span class="incdecnumber" id="display4">0</span>
+
+                <div>
+                    <button class="plus" id="add4" onclick="addition4()">+</button>
+                </div>
+            </div>
+
+
+            <div class="incdec5">
+                <div>
+                    <button class="minus" onclick="substraction5()">-</button> 
+                </div>
+                
+                <span class="incdecnumber" id="display5">0</span>
+
+                <div>
+                    <button class="plus" onclick="addition5()">+</button>
+                </div>
+            </div>
+
+            
+         
+        </div>
+    </div>
+
+</div>
+
+
+    
+
+    <div class="trunk">
+
+      
+        <label class="labeltable">The Summary</label><br><br> 
+
+        <table class="summary">
+            <tr id="summdate">
+                <td>Date</td>
+                <td id="tabledate"></td>
+            </tr>
+
+            <tr id="summtime">
+                <td>Time</td>
+                <td id="tabletime"> 7:00 AM -   8:00 AM</td>
+            </tr>
+
+            <tr id="summduration">
+                <td>Duration</td>
+                <td id="tableduration">1 hrs ( 1 Normal : 0 Peak )</td>
+            </tr>
+
+            <tr id="tickscharge">
+                <td>Tickets</td>
+                <td>Charges</td>
+            </tr>
+
+            <tr id="summdefault">
+                <td>1 Foreign Adult</td>
+                <td>$10</td>
+            </tr>
+
+            <tr id="slAdult" style="display: none;">
+                <td id="slaTicket"></td>
+                <td id="slaCharge"></td>
+            </tr>
+
+            <tr id="slChild" style="display: none;">
+                <td id="slcTicket"></td>
+                <td id="slcCharge"></td>
+            </tr>
+
+            <tr id="frAdult" style="display: none;">
+                <td id="fraTicket"></td>
+                <td id="fraCharge"></td>
+            </tr>
+
+            <tr id="frChild" style="display: none;">
+                <td id="frcTicket"></td>
+                <td id="frcCharge"></td>
+            </tr>
+
+            <tr id="infantSlFr" style="display: none;">
+                <td id="islfrTicket"></td>
+                <td id="islfrCharge"></td>
+            </tr>
+
+            <tr id="summtotpay">
+                <td>Total Payable</td>
+                <td id="totalAmount"></td>
+            </tr>
+
+             
+        </table>
+
+
+    </div>
+
+ </div>   
+
+
+
+    <div class="continue1">
+        <button onclick="ticketsbtn()">Continue With Purchase</button>
+    </div>
+
+    <footer class="desk">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <h4>TurtleBliss</h4>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="about.html">Contact us</a></li>
+                    </ul>
+                </div>
+  
+                <div class="column">
+                    <h4>Turtle Categories</h4>
+                    <ul>
+                        <li><a href="greensea.html">Green Sea Turtle</a></li>
+                        <li><a href="leatherback.html">Leatherback Sea Turtle</a></li>
+                        <li><a href="loggerhead.html">Loggerhead Sea Turtle</a></li>
+                        <li><a href="hawksbill.html">Hawksbill Sea Turtle</a></li>
+                        <li><a href="oliveridley.html">Olive Ridley Sea Turtle</a></li>
+                    </ul>
+                </div>
+  
+                <div class="column">
+                    <h4>Other Hatchery pages</h4>
+                    <ul>
+                        <li><a href="HikkaduwaTH.html">Hikkaduwa Hatchery</a></li>
+                        <li><a href="kosgoda.html">Kosgoda Hatchery</a></li>
+                        <li><a href="bentota.html">Bentota Hatchery</a></li>
+                    </ul>
+                </div>
+  
+                <div class="column">
+                    <div class="inform">
+                        <h3>Stay Informed With Our Latest News!</h3>
+                    </div>
+                
+                        <form class="news">
+                            <input type="text" placeholder="Your Email Address">
+                            <button type="submit">Enter</button>
+                        </form>
+                    
+                
+                        <div class="socialmedia">
+                            <h4>Follow Us on:</h4><br>
+                            <div class="icons">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy;2023 TurtleBliss. Designed By <span>Januki Ranasinghe</span></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="TBbooking.js"></script>
+
+</body>
+</html>
