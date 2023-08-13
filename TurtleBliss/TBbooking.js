@@ -1,6 +1,6 @@
 //CALENDAR
 
-if (window.location.href == "http://127.0.0.1:5500/TurtleBliss/tickets.html") {
+if (window.location.href == "https://januki10.github.io/HTML-Assignment/TurtleBliss/tickets.html") {
 
     const presentDate = document.querySelector(".currentdate");
     daysBracket = document.querySelector(".days"),
@@ -1584,14 +1584,14 @@ if (window.location.href == "http://127.0.0.1:5500/TurtleBliss/tickets.html") {
 
         sessionStorage.setItem("store-totalAmount", document.getElementById("totalAmount").innerText);
 
-        window.location.href = "http://127.0.0.1:5500/TurtleBliss/details.html";
+        window.location.href = "https://januki10.github.io/HTML-Assignment/TurtleBliss/details.html";
 
     }
 
 }
 
 
-if (window.location.href == "http://127.0.0.1:5500/TurtleBliss/details.html") {
+if (window.location.href == "https://januki10.github.io/HTML-Assignment/TurtleBliss/details.html") {
 
 
 
@@ -1766,13 +1766,13 @@ if (window.location.href == "http://127.0.0.1:5500/TurtleBliss/details.html") {
     }
 
     function detailsbtn() {
-        window.location.href = "http://127.0.0.1:5500/TurtleBliss/payment.html";
+        window.location.href = "https://januki10.github.io/HTML-Assignment/TurtleBliss/payment.html";
     }
 
 
 }
 
-if (window.location.href == "http://127.0.0.1:5500/TurtleBliss/payment.html") {
+if (window.location.href == "https://januki10.github.io/HTML-Assignment/TurtleBliss/payment.html") {
 
     const form2 = document.getElementById("Form2")
     const cardnumber = document.getElementById("cardnum");
@@ -1900,11 +1900,11 @@ if (window.location.href == "http://127.0.0.1:5500/TurtleBliss/payment.html") {
     document.getElementById("fpsubmit").innerText = `Pay ${Total}`;
 
     function paybtn() {
-        window.location.href = "http://127.0.0.1:5500/TurtleBliss/confirmation.html";
+        window.location.href = "https://januki10.github.io/HTML-Assignment/TurtleBliss/confirmation.html";
     }
 }
 
-if(window.location.href == "http://127.0.0.1:5500/TurtleBliss/confirmation.html"){
+if(window.location.href == "https://januki10.github.io/HTML-Assignment/TurtleBliss/confirmation.html"){
 
     document.getElementById("tabledate").innerText = sessionStorage.getItem('store-tabledate');
     document.getElementById("tabletime").innerText = sessionStorage.getItem('store-tabletime');
